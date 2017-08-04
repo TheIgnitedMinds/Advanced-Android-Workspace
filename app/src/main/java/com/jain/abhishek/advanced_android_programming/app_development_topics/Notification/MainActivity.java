@@ -55,7 +55,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Intent intent = new Intent(MainActivity.this,NewActivity.class);
 
                 //You use a PendingIntent to specify the action, which should be performed
-                // once the user select the notification.
+                // once the user select or click the notification.
 
                 PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this, 1, intent, 0);
                 pendingIntent.cancel();
